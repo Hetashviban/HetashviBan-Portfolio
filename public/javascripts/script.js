@@ -1,1 +1,0 @@
-document.body.style.cursor = 'url(/images/sun.png), auto';

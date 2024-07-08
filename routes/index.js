@@ -12,8 +12,8 @@ router.get("/projects", (req, res) => {
 });
 
 // Route for the contact page
-router.get("/contact", (req, res) => {
-    res.render("contact", { title: "Hetashvi Ban - Contact" });
+router.get("/skill", (req, res) => {
+    res.render("skill", { title: "Hetashvi Ban - Skills" });
 });
 
 // Route for the about page
