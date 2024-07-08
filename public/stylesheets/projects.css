@@ -2,15 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  color: white;
-  font-family: Arial, sans-serif;
-  width: 100%;
+  flex-direction: row;
+  position: relative;
   padding: 2em 0;
 }
 
 .project {
-  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -18,71 +15,95 @@
 }
 
 .card {
-  background-color: #e3eeff;
-  width: 40vw;
-  height: 35vh;
-  position: relative;
-  border-radius: 20px;
-  display: flex;
+  background-color: #fafafa;
+  width: 100%;
+  max-width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2em 0;
+  padding: 1.5em;
   text-align: center;
-  padding: 1em;
-  font-size: 1.1rem;
-  color: #000;
-  margin: 3em 0em 3em 1em;
+  height: 32vh;
+  position: relative; 
+  transition: transform 0.3s ease;
 }
 
-.card:nth-child(even) {
-  align-self: flex-end;
-  margin-right: 2.5em;
+.card:hover {
+  transform: translateY(-5px);
 }
 
-.card:nth-child(odd) {
-  align-self: flex-start;
-  margin-left: 2.5em;
-}
-
-.card img {
-  width: 10vw;
-  height: 20vh;
-  border-radius: 20px;
+.card h6{
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0%;
 }
 
 .card-content {
-  padding-left: 1em;
-  align-items: center;
+  position: relative; /* Ensure content is on top of the pseudo-element */
+  z-index: 1;
 }
 
-.card-footer {
-  display: flex;
-  justify-content: space-evenly;
-  position: relative;
+.card-one::before,
+.card-two::before,
+.card-three::before,
+.card-four::before,
+.card-five::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 10em;
+  color: rgba(33, 121, 253, 0.1);
+  position: absolute;
+  z-index: 0;
   top: 15%;
+  left: 35%;
+  opacity: 0.7;
 }
 
-.card-footer a {
-  text-decoration: none;
-  color: #000;
+.card-one::before {
+  content: "\f07a";
 }
 
-.card-footer a:hover {
-  text-decoration: underline;
-  color: #2179fd;
+.card-two::before {
+  content: "\f03d";
+}
+
+.card-three::before {
+  content: "\f001";
+}
+
+.card-four::before {
+  content: "\f1ec";
+  left: 40%;
+}
+
+.card-five::before {
+  content: "\f072";
+  left: 40.5%;
 }
 
 .column-two {
+  margin-top: 5em;
   width: 2px;
-  height: 100%;
-  background-color: #898989;
+  height: 90%;
+  background-color: #ccc;
   position: absolute;
+  top: 0;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
 }
 
-.card-header p{
-    padding-left: 3em;
+.card-footer{
+  padding-top: 0.9rem;
 }
 
-.h3-one{
-    margin: 0em 0em 0.75rem 0em;
+.card-footer a{
+  text-decoration: none;
+  color: #000;
+  padding: 0.75rem;
+}
+
+.card-footer a:hover{
+  text-decoration: underline;
 }

@@ -3,6 +3,10 @@
     src: url("/fonts/text.ttf") format("truetype");
 }
 
+.about-me{
+    height: fit-content;
+}
+
 html{
     font-family: text;
 }
@@ -78,7 +82,7 @@ img{
 }
 
 .work{
-    height: 70vh;
+    height: 128vh;
     margin: 4em 0em 0em 15em;
     text-align: center;
 }

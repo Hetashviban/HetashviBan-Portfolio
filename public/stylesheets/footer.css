@@ -1,0 +1,29 @@
+footer {
+  font-family: text;
+  font-weight: 700;
+  font-size: 1rem;
+  height: 3.5em;
+  width: 90%;
+  margin: 0 auto; /* Centers the navbar horizontally */
+  margin-bottom: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: #abccfe;
+}
+
+.social{
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+}
+
+.github,
+.linkedin{
+    margin-right: 1em;
+}
+
+.copyright{
+    margin-left: 2em;
+}
