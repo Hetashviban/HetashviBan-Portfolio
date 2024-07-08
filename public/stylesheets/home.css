@@ -1,0 +1,201 @@
+nav {
+  height: 10vh;
+}
+
+.hero {
+  position: relative;
+  height: 80vh;
+  margin-left: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* styles.css */
+.name {
+  text-align: center;
+  position: absolute;
+  bottom: 15%;
+  right: 30%;
+  opacity: 0;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #000;
+  padding: 3em;
+}
+
+/* Shapes */
+.circle,
+.rectangle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff; 
+  font-size: 1em; 
+  padding: 0.5em; 
+  position: absolute;
+}
+
+.circle {
+  left: 23em;
+  top: 8em;
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  background-color: #9bd7d5;
+}
+
+.rectangle.one {
+  background-color: #f9bd2e;
+  left: 30em;
+  top: 13em;
+  width: 10em;
+  height: 6em;
+  border-radius: 1em;
+}
+
+.rectangle.two {
+  background-color: #f88379;
+  right: 22em;
+  top: 14em;
+  width: 10em;
+  height: 4em;
+  border-radius: 1em;
+}
+
+.rectangle.three {
+  background-color: #129793;
+  right: 30em;
+  bottom: 13em;
+  width: 10em;
+  height: 7em;
+  border-radius: 1em;
+}
+
+.heart {
+  position: absolute;
+  left: 18em;
+  top: 14em;
+  width: 6em;
+  height: 5.2em;
+}
+
+.heart::before,
+.heart::after {
+  position: absolute;
+  content: "";
+  left: 4em;
+  top: 0;
+  width: 4em;
+  height: 6.4em;
+  background-color: #607292;
+  border-radius: 4em 4em 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.star {
+  position: absolute;
+  filter: drop-shadow(5px 5px 20px #a5a5a5);
+  right: 20em;
+  bottom: 13em;
+  width: 5em;
+  height: 5em;
+  background-color: #36507d;
+  border-radius: 0.5rem;
+}
+
+.star:before {
+  content: "";
+  display: block;
+  background-color: #36507d;
+  width: 5em;
+  height: 5em;
+  transform: rotateZ(45deg);
+  border-radius: 0.5rem;
+}
+
+/*Emoji's*/
+.hero img {
+  filter: drop-shadow(5px 5px 20px #a5a5a5);
+  width: 5.5em;
+  height: 5.5em;
+}
+
+.sun {
+  filter: drop-shadow(5px 5px 20px #a5a5a5);
+  position: absolute;
+  left: 27em;
+  top: 17em;
+}
+
+.peace {
+  filter: drop-shadow(5px 5px 20px #a5a5a5);
+  position: absolute;
+  left: 32em;
+  bottom: 14em;
+}
+
+.sparkle {
+  filter: drop-shadow(5px 5px 20px #a5a5a5);
+  position: absolute;
+  right: 32em;
+  top: 14em;
+}
+
+/*Transition*/
+.circle,
+.rectangle,
+.heart,
+.star,
+.hero img,
+.name {
+  transition: all 0.5s ease-in-out;
+}
+
+.name:hover {
+  opacity: 1;
+}
+
+.content:hover .circle {
+  transform: translateX(-50px) translateY(-50px);
+}
+
+.content:hover .rectangle.one {
+  transform: translateX(20px) translateY(90px);
+}
+
+.content:hover .rectangle.two {
+  transform: translateX(50px) translateY(50px);
+}
+
+.content:hover .rectangle.three {
+  transform: translateX(50px) translateY(-50px);
+}
+
+.content:hover .heart {
+  transform: translateX(-50px);
+}
+
+.content:hover .star {
+  transform: translateX(50px);
+}
+
+.content:hover .sparkle {
+  transform: translateX(30px) translateY(50px);
+}
+
+.content:hover .sun {
+  transform: translateX(-60px) translateY(30px);
+}
+
+.content:hover .peace {
+  transform: translateX(-20px) translateY(-50px);
+}

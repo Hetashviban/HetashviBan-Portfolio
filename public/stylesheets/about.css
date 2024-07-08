@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "text";
+    src: url("/fonts/text.ttf") format("truetype");
+}
+
+html{
+    font-family: text;
+}
+
+.intro{
+    display: flex;
+    margin: 5em 0em 0em 10em;
+}
+
+.me{
+    width: 20%;
+}
+
+h2{
+   margin: 0em 0em 0em 4em;
+   font-size: 2.65rem;
+}
+
+.text, p{
+    width: 80%;
+    margin: 0rem;
+}
+
+.text{
+    margin-left: 9rem;
+}
+
+.text p:nth-of-type(2){
+    margin: 0.75rem 0rem;
+}
+
+p:first-child{
+    text-align: center;
+}
+
+img{
+    width: 22vw;
+    height: 50vh;
+    filter: drop-shadow(5px 5px 20px #a5a5a5);
+}
+
+
+
+
+
+/*Column*/
+.column{
+    width: 2px;         
+    height: 7rem;        
+    background-color: #898989;  
+    margin: 3rem auto;
+}
+
+
+
+/*Education section*/
+.experience h2:first-child, 
+.experience h2:nth-of-type(2){
+    font-size: 2rem;
+    text-align: center;
+    color: #75aafb;
+    margin: 2em 0rem 0rem 3rem;
+}
+
+.experience{
+    margin-bottom: 7em;
+}
+
+.college{
+    height: 35vh;
+    margin: 4em 0em 0em 15em;
+    text-align: center;
+}
+
+.work{
+    height: 70vh;
+    margin: 4em 0em 0em 15em;
+    text-align: center;
+}
+
+.college p:nth-of-type(1), 
+.work-one p:nth-of-type(1),
+.work-two p:nth-of-type(1){
+    font-size: 1.3rem;
+}
+
+.college p:nth-of-type(2),
+.work-one p:nth-of-type(2),
+.work-two p:nth-of-type(2){
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.college p:nth-of-type(3),
+.work-one p:nth-of-type(3),
+.work-two p:nth-of-type(3){
+    font-size: 1.05rem;
+    margin-top: 1rem;
+    color: #898989;
+}
+
+.work-two{
+    margin: 7em 0em;
+}

@@ -1,0 +1,59 @@
+/* NAVBAR STYLES */
+@font-face {
+  font-family: "text";
+  src: url("/fonts/text.ttf") format("truetype");
+}
+
+body {
+  margin: 0%;
+  /* cursor: url('/img/cursor.png'), auto; */
+}
+
+nav {
+  font-family: text;
+  font-weight: 700;
+  font-size: 1rem;
+  height: 3.5em;
+  width: 95%;
+  margin: 0 auto; /* Centers the navbar horizontally */
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: #abccfe;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav a:first-child{
+  margin-left: 1.2em;
+}
+
+.links {
+  width: 80%;
+  text-align: center;
+}
+
+.links a {
+  padding: 0rem 1rem;
+}
+
+.dir {
+  width: 10%;
+}
+
+.dir img{
+  height: 1.1rem;
+  width: 1.1rem;
+  margin-left: 0.1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-left: 1rem;
+  width: 10%;
+}
