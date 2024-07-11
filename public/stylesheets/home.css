@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+/* .content{
+  display: none;
+} */
+
 /* styles.css */
 .name {
   text-align: center;
@@ -194,4 +198,152 @@
 
 .content:hover .peace {
   transform: translateX(-20px) translateY(-50px);
+}
+
+/*Design for smaller screens*/
+.content-phone {
+  display: none;
+  background: #fff;
+  align-items: center;
+}
+
+.phone-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #abccfe;
+}
+
+.my-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.hello-button {
+  padding: 0.5em 1.5em;
+  font-size: 1rem;
+  color: #fff;
+  background: #abccfe;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1200px){
+  .name {
+    font-size: 2rem;
+    bottom: 24%;
+  }
+
+  .circle {
+    left: 20em;
+    top: 7em;
+    width: 7em;
+    height: 7em;
+  }
+
+  .rectangle.one {
+    left: 26em;
+    top: 12em;
+    width: 9em;
+    height: 5em;
+  }
+
+  .rectangle.two {
+    right: 20em;
+    top: 13em;
+    width: 9em;
+    height: 3.5em;
+  }
+
+  .rectangle.three {
+    right: 24em;
+    bottom: 14.3em;
+    width: 9em;
+    height: 6em;
+  }
+
+  .heart {
+    left: 16em;
+    top: 13em;
+    width: 5em;
+    height: 4.2em;
+  }
+
+  .star {
+    right: 18em;
+    bottom: 14em;
+    width: 4em;
+    height: 4em;
+  }
+
+  .star::before {
+    right: 18em;
+    bottom: 12em;
+    width: 4em;
+    height: 4em;
+  }
+
+  .sun {
+    left: 24em;
+    top: 16em;
+  }
+
+  .peace {
+    left: 29em;
+    bottom: 14em;
+  }
+
+  .sparkle {
+    right: 28em;
+    top: 15em;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1028px) {
+
+  .content-phone{
+    display: block;
+  }
+
+  .content{
+    display: none;
+  }
+
+  .phone-name {
+    font-size: 2rem;
+  }
+
+  .my-title {
+    font-size: 1.2rem;
+  }
+
+  .hello-button {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content-phone{
+    display: block;
+    }
+
+  .content{
+    display: none;
+  }
+
+  .phone-name {
+    font-size: 2.5rem;
+  }
+
+  .my-title {
+    font-size: 1rem;
+  }
+
+  .hello-button {
+    font-size: 0.8rem;
+  }
 }
