@@ -6,7 +6,6 @@
 
 body {
   margin: 0%;
-  /* cursor: url('/img/cursor.png'), auto; */
 }
 
 nav {
@@ -16,7 +15,7 @@ nav {
   font-size: 1rem;
   height: 3.5em;
   width: 95%;
-  margin: 0 auto; /* Centers the navbar horizontally */
+  margin: 0 auto;
   margin-top: 1.5em;
   display: flex;
   justify-content: space-between;
@@ -30,13 +29,15 @@ nav a {
   color: #000;
 }
 
-nav a:first-child{
+nav a:first-child {
   margin-left: 1.2em;
 }
 
 .links {
   width: 80%;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .links a {
@@ -47,7 +48,7 @@ nav a:first-child{
   width: 10%;
 }
 
-.dir img{
+.dir img {
   height: 1.1rem;
   width: 1.1rem;
   margin-left: 0.1rem;
@@ -57,4 +58,55 @@ p {
   font-size: 1rem;
   margin-left: 1rem;
   width: 10%;
+}
+
+.fa-bars {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav {
+    height: auto;
+    padding: 1em;
+    flex-direction: column;
+  }
+
+  .links {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+  }
+
+  .links a {
+    padding: 0.5rem 0;
+  }
+
+  .dir {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+    padding-right: 1em;
+  }
+
+  .my-name{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  nav a:first-child {
+    display: inline-block;
+  }
+}
+
+/* Show links on small screens when menu is clicked */
+@media (max-width: 768px) {
+  .links.active {
+    display: flex;
+  }
 }

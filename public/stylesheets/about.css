@@ -1,120 +1,344 @@
 @font-face {
-    font-family: "text";
-    src: url("/fonts/text.ttf") format("truetype");
+  font-family: "text";
+  src: url("/fonts/text.ttf") format("truetype");
 }
 
-.about-me{
-    height: fit-content;
+.about-me {
+  height: fit-content;
 }
 
-html{
-    font-family: text;
+html {
+  font-family: text;
 }
 
-.intro{
-    display: flex;
-    margin: 5em 0em 0em 10em;
+.intro {
+  display: flex;
+  margin: 5em 0em 0em 10em;
 }
 
-.me{
-    width: 20%;
+.me {
+  width: 20%;
 }
 
-h2{
-   margin: 0em 0em 0em 4em;
-   font-size: 2.65rem;
+h2 {
+  margin: 0em 0em 0em 4em;
+  font-size: 2.65rem;
 }
 
-.text, p{
-    width: 80%;
-    margin: 0rem;
+.text,
+p {
+  width: 80%;
+  margin: 0rem;
 }
 
-.text{
-    margin-left: 9rem;
+.text {
+  margin-left: 9rem;
 }
 
-.text p:nth-of-type(2){
-    margin: 0.75rem 0rem;
+.text p:nth-of-type(2) {
+  margin: 0.75rem 0rem;
 }
 
-p:first-child{
-    text-align: center;
+p:first-child {
+  text-align: center;
 }
 
-img{
-    width: 22vw;
-    height: 50vh;
-    filter: drop-shadow(5px 5px 20px #a5a5a5);
+img {
+  width: 22vw;
+  height: 50vh;
+  filter: drop-shadow(5px 5px 20px #a5a5a5);
 }
-
-
-
-
 
 /*Column*/
-.column{
-    width: 2px;         
-    height: 7rem;        
-    background-color: #898989;  
-    margin: 3rem auto;
+.column {
+  width: 2px;
+  height: 7rem;
+  background-color: #898989;
+  margin: 3rem auto;
 }
-
-
 
 /*Education section*/
-.experience h2:first-child, 
-.experience h2:nth-of-type(2){
-    font-size: 2rem;
-    text-align: center;
-    color: #75aafb;
-    margin: 2em 0rem 0rem 3rem;
+.experience h2:first-child,
+.experience h2:nth-of-type(2) {
+  font-size: 2rem;
+  text-align: center;
+  color: #75aafb;
+  margin: 2em 0rem 0rem 3rem;
 }
 
-.experience{
-    margin-bottom: 7em;
+.experience {
+  margin-bottom: 7em;
 }
 
-.college{
-    height: 35vh;
-    margin: 4em 0em 0em 15em;
-    text-align: center;
+.college {
+  height: 35vh;
+  margin: 4em 0em 0em 15em;
+  text-align: center;
 }
 
-.work{
-    height: 128vh;
-    margin: 4em 0em 0em 15em;
-    text-align: center;
+.work {
+  height: 128vh;
+  margin: 4em 0em 0em 15em;
+  text-align: center;
 }
 
-.college p:nth-of-type(1), 
+.college p:nth-of-type(1),
 .work-one p:nth-of-type(1),
 .work-two p:nth-of-type(1),
-.work-three p:nth-of-type(1){
-    font-size: 1.3rem;
+.work-three p:nth-of-type(1) {
+  font-size: 1.3rem;
 }
 
 .college p:nth-of-type(2),
 .work-one p:nth-of-type(2),
 .work-two p:nth-of-type(2),
-.work-three p:nth-of-type(2){
-    font-size: 2rem;
-    margin-top: 1rem;
+.work-three p:nth-of-type(2) {
+  font-size: 2rem;
+  margin-top: 1rem;
 }
 
 .college p:nth-of-type(3),
 .work-one p:nth-of-type(3),
 .work-two p:nth-of-type(3),
-.work-three p:nth-of-type(3){
-    font-size: 1.05rem;
-    margin-top: 1rem;
-    color: #898989;
+.work-three p:nth-of-type(3) {
+  font-size: 1.05rem;
+  margin-top: 1rem;
+  color: #898989;
 }
 
-.work-two{
-    margin: 7em 0em;
+.work-two {
+  margin: 7em 0em;
 }
 
-.work-three{
-    padding-bottom: 7em;
+.work-three {
+  padding-bottom: 7em;
+}
+
+/* Media Queries */
+@media (max-width: 575px) {
+
+  .home-page{
+    margin-left: 1em;
+  }
+  .intro{
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0%;
+    padding: 1em 0em 0em 1em;
+    text-align: center;
+  }
+
+  .column{
+    margin-top: 7em;
+  }
+
+  .intro p:first-child{
+    display: none;
+  }
+
+  .intro p:nth-of-type(2), 
+  .intro p:nth-of-type(3){
+    padding-left: 2em;
+  }
+
+  img{
+   padding-left: 150%;
+   min-width: 190%;
+   height: auto;
+   margin-top: 2.5rem;
+  }
+
+  .home-page h2{
+    margin: 0%;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .experience h2{
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .text{
+    margin: 0%;
+    width: fit-content;
+  }
+
+  .college, 
+  .work{
+    margin: 0%;
+    padding-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .work{
+    padding-left: 3em;
+    height: fit-content;
+    width: 90%;
+  }
+
+  .college{
+    width: 90%;
+    padding-left: 1em;
+  }
+
+  .experience{
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .intro{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0%;
+        padding: 1em 0em 0em 1em;
+        text-align: center;
+      }
+    
+      .column{
+        margin-top: 7em;
+      }
+    
+      .intro p:first-child{
+        display: none;
+      }
+    
+      .intro p:nth-of-type(2), 
+      .intro p:nth-of-type(3){
+        padding-left: 2em;
+      }
+
+      .me{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    
+      img{
+        min-width: 45%;
+        height: auto;
+       margin-top: 2.5rem;
+      }
+    
+      .text{
+        margin: 0%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .text h2{
+        padding-top: 1em;
+      }
+
+      .text p{
+        width: 100%;
+      }
+
+      h2{
+        margin: 0%;
+      }
+    
+      .college, 
+      .work{
+        margin: 0%;
+        padding-top: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+      }
+    
+      .work{
+        padding-left: 10%;
+        height: fit-content;
+        width: 100%;
+      }
+    
+      .experience{
+        margin-bottom: 1em;
+      }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .intro{
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0%;
+    padding: 1em 0em 0em 1em;
+    text-align: center;
+  }
+
+  .column{
+    margin-top: 7em;
+  }
+
+  .intro p:first-child{
+    display: none;
+  }
+
+  .intro p:nth-of-type(2), 
+  .intro p:nth-of-type(3){
+    padding-left: 2em;
+  }
+
+  .me{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  img{
+    min-width: 45%;
+    height: auto;
+   margin-top: 2.5rem;
+  }
+
+  .text{
+    margin: 0%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .text h2{
+    padding-top: 1em;
+  }
+
+  .text p{
+    width: 100%;
+  }
+
+  h2{
+    margin: 0%;
+  }
+
+  .college, 
+  .work{
+    margin: 0%;
+    padding-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .work{
+    padding-left: 10%;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .experience{
+    margin-bottom: 1em;
+  }
 }

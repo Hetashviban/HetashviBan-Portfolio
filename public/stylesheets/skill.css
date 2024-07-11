@@ -1,4 +1,4 @@
-.skills{
+.skills {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,7 @@
 
 .skills-container {
     margin-top: 3em;
-    height: 135vh;
+    height: 100%;
     width: 100%;
     padding: 1em 4em;
     margin-bottom: 4em;
@@ -35,7 +35,7 @@ h2 {
     background-color: #fff;
     height: 50vh;
     padding: 2em;
-    margin: 1em ;
+    margin: 1em;
     width: calc(50% - 10px);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -43,7 +43,7 @@ h2 {
     cursor: pointer;
 }
 
-.skill-block i{
+.skill-block i {
     font-size: 5.5rem;
     opacity: 0.1;
 }
@@ -77,3 +77,55 @@ h2 {
     font-size: 1.2em;
     margin-right: 10px;
 }
+
+/* Extra small screens */
+@media (max-width: 575px) {
+    .skills-container {
+      margin-left: 1.75em;
+    }
+    .row {
+      flex-direction: column;
+    }
+    .skill-block {
+      width: 75%;
+      height: fit-content;
+    }
+  }
+  
+  /* Small screens */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .skills-container {
+      padding: 1em;
+    }
+    .row {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .skill-block {
+      width: 85%;
+      height: fit-content;
+    }
+  }
+  
+  /* Medium screens */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+    .skill-block {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 992px) {
+    .row {
+      gap: 40px;
+    }
+    .skill-block {
+      width: calc(50% - 20px);
+    }
+  }
+  
